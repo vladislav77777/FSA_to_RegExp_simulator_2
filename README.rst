@@ -20,17 +20,19 @@ trans=[s1>a>s2,...]	// s1,s2,...∈ states; a ∈ alpha
 Validation result | Errors:
 ***************************
 
-E0: Input file is malformed
+Note
+The errors may appear in the inputs, which should lead to error message according to the 
+priority given below. Only 1 error message should be shown, if required. 
+It should be assumed that for each line read from the inputs all the possible errors should be 
+checked in the given priority, if applicable for the current line.
 
-E1: A state 's' is not in the set of states
-
-E2: Some states are disjoint
-
-E3: A transition 'a' is not represented in the alphabet
-
-E4: Initial state is not defined
-
-E5: FSA is nondeterministic
+E1: Input file is malformed
+E2: Initial state is not defined
+E3: Set of accepting states is empty
+E4: A state 's' is not in the set of states
+E5: A transition 'a' is not represented in the alphabet
+E6: Some states are disjoint
+E7: FSA is nondeterministic
 
 Kleene’s Algorithm
 ******************
