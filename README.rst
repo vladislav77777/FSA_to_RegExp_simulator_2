@@ -72,7 +72,6 @@ output.txt
 
 .. code:: text
 
-      Error:
       E2: Some states are disjoint
 
 Example 2
