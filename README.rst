@@ -110,4 +110,25 @@ output.txt
 
 .. code:: text
 
-      {}
+      E3: Set of accepting states is empty
+      
+      
+Example 4
+*********
+input.txt
+
+.. code:: text
+
+      states=[on,off,op]
+      alpha=[turn_on,turn_off,A,B]
+      initial=[off]
+      accepting=[op]
+      trans=[off>turn_on>on,on>turn_off>off,op>A>on,off>B>op]
+      
+output.txt
+
+.. code:: text
+
+      ((((eps)(eps)*(turn_on)|(turn_on))((turn_off)(eps)*(turn_on)|(eps))*((turn_off)(eps)*(B)|({}))|((eps)(eps)*(B)|(B)))((({})(eps)*(turn_on)|(A))((turn_off)(eps)*(turn_on)|(eps))*((turn_off)(eps)*(B)|({}))|(({})(eps)*(B)|(eps)))*((({})(eps)*(turn_on)|(A))((turn_off)(eps)*(turn_on)|(eps))*((turn_off)(eps)*(B)|({}))|(({})(eps)*(B)|(eps)))|(((eps)(eps)*(turn_on)|(turn_on))((turn_off)(eps)*(turn_on)|(eps))*((turn_off)(eps)*(B)|({}))|((eps)(eps)*(B)|(B))))
+
+
